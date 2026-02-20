@@ -2,8 +2,8 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-add-the-google-site-verification-meta-tag-meta-name-google-site-verification-content-3jcpygsb7veynjc7-inside-the-head-section-of-frontend-index-html",
-      "featureTitle": "Add the Google site verification meta tag <meta name=\"google-site-verification\" content=\"3JcpygsB7VEyNJC7...\" /> inside the <head> section of frontend/index.html",
+      "featureId": "feature-replace-the-existing-google-site-verification-meta-tag-content-in-frontend-index-html-from-content-paste-your-new-code-here-to-content-3jcpygsb7veynjc7",
+      "featureTitle": "Replace the existing Google site verification meta tag content in frontend/index.html from 'content=\"PASTE-YOUR-NEW-CODE-HERE\"' to 'content=\"3JcpygsB7VEyNJC7\"'",
       "files": [
         "frontend/index.html"
       ],
@@ -15,7 +15,7 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-33"
+        "REQ-35"
       ],
       "confidence": "high"
     }

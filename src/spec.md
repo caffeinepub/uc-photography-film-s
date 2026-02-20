@@ -1,9 +1,9 @@
 # Specification
 
 ## Summary
-**Goal:** Add Google site verification meta tag to enable Google Search Console verification.
+**Goal:** Update the Google site verification meta tag with the correct verification code.
 
 **Planned changes:**
-- Add Google site verification meta tag to the <head> section of frontend/index.html with the content attribute value "3JcpygsB7VEyNJC7..."
+- Change the content attribute of the Google site verification meta tag in frontend/index.html from "PASTE-YOUR-NEW-CODE-HERE" to "3JcpygsB7VEyNJC7"
 
-**User-visible outcome:** The website will include the Google verification meta tag, allowing the owner to verify ownership in Google Search Console (no visible changes to users).
+**User-visible outcome:** The website will be properly verified with Google Search Console using the correct verification code.

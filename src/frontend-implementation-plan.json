@@ -1,21 +1,22 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Add Google site verification meta tag",
+  "title": "Update Google site verification meta tag content to exact value",
   "requirements": [
     {
-      "id": "REQ-33",
-      "summary": "Add Google site verification meta tag to the HTML head section",
+      "id": "REQ-35",
+      "summary": "Update Google site verification meta tag content attribute from placeholder to exact value '3JcpygsB7VEyNJC7'",
       "acceptanceCriteria": [
-        "The meta tag is present in the <head> section of frontend/index.html",
-        "The meta tag includes the exact content attribute value: 3JcpygsB7VEyNJC7...",
-        "The meta tag is properly formatted as a self-closing HTML tag"
+        "The meta tag in frontend/index.html must have the exact content attribute value '3JcpygsB7VEyNJC7'",
+        "The meta tag must remain in the <head> section",
+        "The meta tag name attribute must remain 'google-site-verification'",
+        "No other HTML structure in index.html should be modified"
       ],
       "file_operations": [
         {
           "path": "frontend/index.html",
           "operation": "modify",
-          "description": "Add the Google site verification meta tag <meta name=\"google-site-verification\" content=\"3JcpygsB7VEyNJC7...\" /> inside the <head> section, positioned after existing meta tags but before the Open Graph properties. Do not modify any other meta tags or head content."
+          "description": "Replace the Google site verification meta tag content attribute value from 'PASTE-YOUR-NEW-CODE-HERE' to '3JcpygsB7VEyNJC7' while preserving all other attributes and HTML structure"
         }
       ]
     }

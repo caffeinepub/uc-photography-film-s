@@ -1,7 +1,7 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-20T13:31:31.859Z",
+  "generatedAt": "2026-02-20T14:14:29.443Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
@@ -11,8 +11,8 @@
     "implemented": 1,
     "items": [
       {
-        "id": "REQ-33",
-        "summary": "Add the Google site verification meta tag <meta name=\"google-site-verification\" content=\"3JcpygsB7VEyNJC7...\" /> inside the <head> section of frontend/index.html",
+        "id": "REQ-35",
+        "summary": "Replace the existing Google site verification meta tag content in frontend/index.html from 'content=\"PASTE-YOUR-NEW-CODE-HERE\"' to 'content=\"3JcpygsB7VEyNJC7\"'",
         "status": "implemented",
         "plannedFiles": [
           "frontend/index.html"

@@ -1,34 +1,36 @@
 {
   "kind": "build_request",
-  "title": "Add Google site verification meta tag",
+  "title": "Update Google site verification meta tag content to exact value",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-33",
-      "text": "Add the Google site verification meta tag <meta name=\"google-site-verification\" content=\"3JcpygsB7VEyNJC7...\" /> inside the <head> section of frontend/index.html",
+      "id": "REQ-35",
+      "text": "Replace the existing Google site verification meta tag content in frontend/index.html from 'content=\"PASTE-YOUR-NEW-CODE-HERE\"' to 'content=\"3JcpygsB7VEyNJC7\"'",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-latest"
+          "msg-6"
         ],
         "quotes": [
-          "Add this meta tag inside the <head> section of my website and deploy it:\n\n<meta name=\"google-site-verification\" content=\"3JcpygsB7VEyNJC7...\" />"
+          "Replace the existing Google verification meta tag in frontend/index.html head section with this exact one:\n\n<meta name=\"google-site-verification\" content=\"3JcpygsB7VEyNJC7\" />"
         ]
       },
       "acceptanceCriteria": [
-        "The meta tag is present in the <head> section of frontend/index.html",
-        "The meta tag includes the exact content attribute value: 3JcpygsB7VEyNJC7...",
-        "The meta tag is properly formatted as a self-closing HTML tag"
+        "The meta tag in frontend/index.html must have the exact content attribute value '3JcpygsB7VEyNJC7'",
+        "The meta tag must remain in the <head> section",
+        "The meta tag name attribute must remain 'google-site-verification'",
+        "No other HTML structure in index.html should be modified"
       ]
     }
   ],
   "constraints": [
-    "Do not modify any other meta tags or head content beyond adding this single verification tag"
+    "Do not modify any other meta tags or HTML elements in frontend/index.html",
+    "Preserve the exact formatting and structure of the meta tag"
   ],
   "nonGoals": [
-    "Changing any other SEO meta tags",
-    "Modifying structured data or Open Graph properties",
-    "Altering any frontend components or styling"
+    "Adding additional verification meta tags",
+    "Modifying SEO or Open Graph meta tags",
+    "Changing any other HTML content"
   ],
   "imageRequirements": {
     "required": [],
