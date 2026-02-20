@@ -1,0 +1,41 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Replace Google Maps iframe with exact coordinate-based link",
+  "requirements": [
+    {
+      "id": "REQ-30",
+      "summary": "Remove the existing Google Maps iframe from the Contact component",
+      "acceptanceCriteria": [
+        "The iframe element displaying the Google Maps embed is completely removed from the Contact component",
+        "No remnants of the previous map implementation remain in the component"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Contact.tsx",
+          "operation": "modify",
+          "description": "Remove the Google Maps iframe element and its container from the Contact component. Delete all iframe-related code including the MapPin icon section that displays the embedded map."
+        }
+      ]
+    },
+    {
+      "id": "REQ-31",
+      "summary": "Add a clickable link in the Contact component that opens Google Maps at the exact coordinates 25.039202,73.912804",
+      "acceptanceCriteria": [
+        "A clickable link element is added to the Contact component",
+        "The link href attribute is exactly https://maps.google.com/?q=25.039202,73.912804",
+        "The coordinates 25.039202,73.912804 are preserved exactly as specified",
+        "The link opens in a new tab (target='_blank' with rel='noopener noreferrer')",
+        "The link styling is consistent with the existing dark luxury theme (black/gold/white color palette)",
+        "The link is appropriately labeled (e.g., 'View on Google Maps' or 'Get Directions')"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Contact.tsx",
+          "operation": "modify",
+          "description": "Add a clickable link with href='https://maps.google.com/?q=25.039202,73.912804' that opens in a new tab (target='_blank' rel='noopener noreferrer'). Style the link consistently with the existing dark luxury theme using the black/gold/white color palette. Include appropriate label text such as 'View on Google Maps' or 'Get Directions'. Position the link in the same location where the iframe was previously displayed within the studio location card."
+        }
+      ]
+    }
+  ]
+}

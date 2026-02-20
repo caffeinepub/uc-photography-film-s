@@ -1,0 +1,18 @@
+{
+  "frontend/src/App.tsx": "Main application component that renders all sections of the photography portfolio website including header, hero, services, portfolio, about, reviews, booking CTA, contact, footer, and floating WhatsApp button.",
+  "frontend/src/components/Header.tsx": "Sticky transparent header component with logo, navigation menu, Instagram icon linking to UC Photography account (uc_photography_100), and highlighted Book Now button with mobile responsive hamburger menu.",
+  "frontend/src/components/Hero.tsx": "Full-screen hero section with cinematic wedding background image, main heading, subheading, WhatsApp CTA button linking to 7877283716, and smooth fade-in animation.",
+  "frontend/src/components/Services.tsx": "Services section displaying six premium service cards with images, icons, and hover animations for wedding, pre-wedding, events, promotion, birthday, and cinematic services. Fixed parsing error by replacing smart quote with regular apostrophe.",
+  "frontend/src/components/Portfolio.tsx": "Portfolio gallery with responsive grid layout, category filter buttons, hover zoom effects, and lightbox preview functionality.",
+  "frontend/src/components/Lightbox.tsx": "Reusable lightbox component for full-screen image preview with navigation controls, keyboard support, and close functionality.",
+  "frontend/src/components/About.tsx": "About section with photographer introduction text and image in a two-column responsive layout with decorative gold border accent.",
+  "frontend/src/components/Reviews.tsx": "Client reviews section with testimonial cards featuring star ratings and smooth carousel navigation using embla-carousel. Updated Tailwind class from flex-grow to grow for v3 compatibility.",
+  "frontend/src/components/BookingCTA.tsx": "Prominent booking call-to-action section with urgency text and WhatsApp booking button linking to 7877283716 with gold gradient background.",
+  "frontend/src/components/Contact.tsx": "Contact section with phone number 7877283716 (clickable tel: link), contact form with validation, studio location with clickable Google Maps link (https://maps.google.com/?q=25.039202,73.912804), WhatsApp button, Instagram link to UC Photography account (uc_photography_100), and dark luxury theme styling.",
+  "frontend/src/components/FloatingWhatsApp.tsx": "Fixed floating WhatsApp icon at bottom-right corner linking to 7877283716 with pre-filled message and pulse animation.",
+  "frontend/src/components/Footer.tsx": "Footer component with logo, quick navigation links, contact information displaying 7877283716, WhatsApp link to 7877283716, Instagram link to UC Photography account (uc_photography_100), copyright text, and caffeine.ai attribution.",
+  "frontend/src/hooks/useScrollAnimation.ts": "Custom React hook using Intersection Observer API to trigger scroll-based animations when elements enter viewport.",
+  "frontend/src/index.css": "Global styles with Playfair Display and Inter fonts, dark luxury theme with black/gold/white colors, smooth scroll behavior, custom animations, and gold-themed scrollbar.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with gold color palette, custom fonts (Playfair Display, Inter), gold-themed shadows, and custom design tokens.",
+  "frontend/index.html": "HTML entry point with comprehensive SEO meta tags, Open Graph tags, structured data for LocalBusiness schema, and optimized title/description for wedding photography keywords. Fixed HTML parsing error by replacing smart quotes with HTML entities."
+}

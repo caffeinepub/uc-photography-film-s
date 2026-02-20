@@ -1,0 +1,48 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-20T12:22:58.500Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 2,
+    "implemented": 2,
+    "items": [
+      {
+        "id": "REQ-30",
+        "summary": "Remove the existing Google Maps iframe from the Contact component",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Contact.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Contact.tsx"
+        ]
+      },
+      {
+        "id": "REQ-31",
+        "summary": "Add a clickable link in the Contact component that opens Google Maps at the exact coordinates 25.039202,73.912804 using the URL https://maps.google.com/?q=25.039202,73.912804",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Contact.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Contact.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/src/components/Contact.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

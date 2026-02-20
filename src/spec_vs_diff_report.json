@@ -1,0 +1,14 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-20T12:22:58.497Z",
+  "summary": "The diff successfully implements both requirements. REQ-30 is satisfied as the Google Maps iframe has been removed from the Contact component. REQ-31 is fully implemented with a clickable link using the exact URL format, correct coordinates, proper styling, appropriate labeling, and correct target/rel attributes for opening in a new tab.",
+  "missing_requirements": [],
+  "hallucinated_features": [],
+  "confidence": 0.95,
+  "changed_files": [
+    "frontend-file-summaries.txt",
+    "frontend/src/components/Contact.tsx",
+    "project_state.json"
+  ]
+}
