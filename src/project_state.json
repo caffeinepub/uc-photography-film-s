@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 15,
+  "projectStateVersion": 19,
   "summary": "Premium cinematic photography portfolio website for UC Photography & Film's with dark luxury theme (Black/Gold/White), featuring hero section, services showcase, portfolio gallery with filters, client reviews, booking CTAs, WhatsApp integration, and contact form. Fully responsive with smooth animations and SEO optimization.",
   "architectural_notes": [
     "Single-page website with smooth scrolling navigation",
@@ -264,6 +264,14 @@
         "REQ-31"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-add-the-google-site-verification-meta-tag-meta-name-google-site-verification-content-3jcpygsb7veynjc7-inside-the-head-section-of-frontend-index-html",
+      "title": "Add the Google site verification meta tag <meta name=\"google-site-verification\" content=\"3JcpygsB7VEyNJC7...\" /> inside the <head> section of frontend/index.html",
+      "reqIds": [
+        "REQ-33"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -354,6 +362,20 @@
     {
       "id": "AR-16",
       "summary": "Replace current Google Maps with exact link: https://maps.google.com/?q=25.039202,73.912804",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-17",
+      "summary": "Update the application domain name to 'uc-photography' to align with the business branding",
+      "reqIds": [
+        "REQ-32"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-18",
+      "summary": "Add Google site verification meta tag with content '3JcpygsB7VEyNJC7...' to the <head> section",
       "reqIds": [],
       "status": "pending"
     }

@@ -1,60 +1,34 @@
 {
   "kind": "build_request",
-  "title": "Replace Google Maps iframe with exact coordinate-based link",
-  "projectName": "UC Photography",
+  "title": "Add Google site verification meta tag",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-30",
-      "text": "Remove the existing Google Maps iframe from the Contact component",
+      "id": "REQ-33",
+      "text": "Add the Google site verification meta tag <meta name=\"google-site-verification\" content=\"3JcpygsB7VEyNJC7...\" /> inside the <head> section of frontend/index.html",
       "target": "frontend",
       "source": {
         "messageIds": [
           "msg-latest"
         ],
         "quotes": [
-          "Remove the current map."
+          "Add this meta tag inside the <head> section of my website and deploy it:\n\n<meta name=\"google-site-verification\" content=\"3JcpygsB7VEyNJC7...\" />"
         ]
       },
       "acceptanceCriteria": [
-        "The iframe element displaying the Google Maps embed is completely removed from the Contact component",
-        "No remnants of the previous map implementation remain in the component"
-      ]
-    },
-    {
-      "id": "REQ-31",
-      "text": "Add a clickable link in the Contact component that opens Google Maps at the exact coordinates 25.039202,73.912804 using the URL https://maps.google.com/?q=25.039202,73.912804",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-latest"
-        ],
-        "quotes": [
-          "Add this exact Google Maps link:\nhttps://maps.google.com/?q=25.039202,73.912804",
-          "Do not change the coordinates."
-        ]
-      },
-      "acceptanceCriteria": [
-        "A clickable link element is added to the Contact component",
-        "The link href attribute is exactly https://maps.google.com/?q=25.039202,73.912804",
-        "The coordinates 25.039202,73.912804 are preserved exactly as specified",
-        "The link opens in a new tab (target='_blank' with rel='noopener noreferrer')",
-        "The link styling is consistent with the existing dark luxury theme (black/gold/white color palette)",
-        "The link is appropriately labeled (e.g., 'View on Google Maps' or 'Get Directions')"
+        "The meta tag is present in the <head> section of frontend/index.html",
+        "The meta tag includes the exact content attribute value: 3JcpygsB7VEyNJC7...",
+        "The meta tag is properly formatted as a self-closing HTML tag"
       ]
     }
   ],
   "constraints": [
-    "Do not modify the coordinates 25.039202,73.912804 in any way",
-    "Use the exact URL format https://maps.google.com/?q=25.039202,73.912804",
-    "Maintain the existing dark luxury theme styling in the Contact section",
-    "Preserve all other Contact section functionality (phone number, contact form, WhatsApp button, Instagram link)"
+    "Do not modify any other meta tags or head content beyond adding this single verification tag"
   ],
   "nonGoals": [
-    "Embedding an interactive map iframe",
-    "Adding additional map functionality beyond the link",
-    "Modifying other sections of the website",
-    "Changing the Contact section layout significantly"
+    "Changing any other SEO meta tags",
+    "Modifying structured data or Open Graph properties",
+    "Altering any frontend components or styling"
   ],
   "imageRequirements": {
     "required": [],

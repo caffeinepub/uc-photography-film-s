@@ -14,5 +14,5 @@
   "frontend/src/hooks/useScrollAnimation.ts": "Custom React hook using Intersection Observer API to trigger scroll-based animations when elements enter viewport.",
   "frontend/src/index.css": "Global styles with Playfair Display and Inter fonts, dark luxury theme with black/gold/white colors, smooth scroll behavior, custom animations, and gold-themed scrollbar.",
   "frontend/tailwind.config.js": "Tailwind configuration extended with gold color palette, custom fonts (Playfair Display, Inter), gold-themed shadows, and custom design tokens.",
-  "frontend/index.html": "HTML entry point with comprehensive SEO meta tags, Open Graph tags, structured data for LocalBusiness schema, and optimized title/description for wedding photography keywords. Fixed HTML parsing error by replacing smart quotes with HTML entities."
+  "frontend/index.html": "HTML entry point with comprehensive SEO meta tags, Google site verification meta tag, Open Graph tags, structured data for LocalBusiness schema, and optimized title/description for wedding photography keywords."
 }

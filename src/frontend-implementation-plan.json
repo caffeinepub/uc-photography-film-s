@@ -1,39 +1,21 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Replace Google Maps iframe with exact coordinate-based link",
+  "title": "Add Google site verification meta tag",
   "requirements": [
     {
-      "id": "REQ-30",
-      "summary": "Remove the existing Google Maps iframe from the Contact component",
+      "id": "REQ-33",
+      "summary": "Add Google site verification meta tag to the HTML head section",
       "acceptanceCriteria": [
-        "The iframe element displaying the Google Maps embed is completely removed from the Contact component",
-        "No remnants of the previous map implementation remain in the component"
+        "The meta tag is present in the <head> section of frontend/index.html",
+        "The meta tag includes the exact content attribute value: 3JcpygsB7VEyNJC7...",
+        "The meta tag is properly formatted as a self-closing HTML tag"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/Contact.tsx",
+          "path": "frontend/index.html",
           "operation": "modify",
-          "description": "Remove the Google Maps iframe element and its container from the Contact component. Delete all iframe-related code including the MapPin icon section that displays the embedded map."
-        }
-      ]
-    },
-    {
-      "id": "REQ-31",
-      "summary": "Add a clickable link in the Contact component that opens Google Maps at the exact coordinates 25.039202,73.912804",
-      "acceptanceCriteria": [
-        "A clickable link element is added to the Contact component",
-        "The link href attribute is exactly https://maps.google.com/?q=25.039202,73.912804",
-        "The coordinates 25.039202,73.912804 are preserved exactly as specified",
-        "The link opens in a new tab (target='_blank' with rel='noopener noreferrer')",
-        "The link styling is consistent with the existing dark luxury theme (black/gold/white color palette)",
-        "The link is appropriately labeled (e.g., 'View on Google Maps' or 'Get Directions')"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/Contact.tsx",
-          "operation": "modify",
-          "description": "Add a clickable link with href='https://maps.google.com/?q=25.039202,73.912804' that opens in a new tab (target='_blank' rel='noopener noreferrer'). Style the link consistently with the existing dark luxury theme using the black/gold/white color palette. Include appropriate label text such as 'View on Google Maps' or 'Get Directions'. Position the link in the same location where the iframe was previously displayed within the studio location card."
+          "description": "Add the Google site verification meta tag <meta name=\"google-site-verification\" content=\"3JcpygsB7VEyNJC7...\" /> inside the <head> section, positioned after existing meta tags but before the Open Graph properties. Do not modify any other meta tags or head content."
         }
       ]
     }
