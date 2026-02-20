@@ -1,36 +1,37 @@
 {
   "kind": "build_request",
-  "title": "Update Google site verification meta tag content to exact value",
+  "title": "Update Google site verification meta tag content to 3JcpygsB7VEyNJC7",
+  "projectName": "UC Photography",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-35",
-      "text": "Replace the existing Google site verification meta tag content in frontend/index.html from 'content=\"PASTE-YOUR-NEW-CODE-HERE\"' to 'content=\"3JcpygsB7VEyNJC7\"'",
+      "id": "REQ-36",
+      "text": "Replace the existing Google site verification meta tag content in frontend/index.html from the current value to '3JcpygsB7VEyNJC7'",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-6"
+          "msg-10"
         ],
         "quotes": [
-          "Replace the existing Google verification meta tag in frontend/index.html head section with this exact one:\n\n<meta name=\"google-site-verification\" content=\"3JcpygsB7VEyNJC7\" />"
+          "Update Google verification meta tag with this code:\n\n3JcpygsB7VEyNJC7"
         ]
       },
       "acceptanceCriteria": [
-        "The meta tag in frontend/index.html must have the exact content attribute value '3JcpygsB7VEyNJC7'",
-        "The meta tag must remain in the <head> section",
-        "The meta tag name attribute must remain 'google-site-verification'",
-        "No other HTML structure in index.html should be modified"
+        "The meta tag in frontend/index.html has name='google-site-verification'",
+        "The content attribute value is exactly '3JcpygsB7VEyNJC7'",
+        "The meta tag remains in the <head> section",
+        "No other meta tags are modified"
       ]
     }
   ],
   "constraints": [
-    "Do not modify any other meta tags or HTML elements in frontend/index.html",
-    "Preserve the exact formatting and structure of the meta tag"
+    "Only modify the content attribute value of the google-site-verification meta tag",
+    "Do not change any other meta tags or HTML structure"
   ],
   "nonGoals": [
-    "Adding additional verification meta tags",
-    "Modifying SEO or Open Graph meta tags",
-    "Changing any other HTML content"
+    "Adding new meta tags",
+    "Modifying SEO or Open Graph tags",
+    "Changing HTML structure or layout"
   ],
   "imageRequirements": {
     "required": [],

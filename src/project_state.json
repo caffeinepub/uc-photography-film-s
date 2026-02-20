@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 23,
+  "projectStateVersion": 25,
   "summary": "Premium cinematic photography portfolio website for UC Photography & Film's with dark luxury theme (Black/Gold/White), featuring hero section, services showcase, portfolio gallery with filters, client reviews, booking CTAs, WhatsApp integration, and contact form. Fully responsive with smooth animations and SEO optimization.",
   "architectural_notes": [
     "Single-page website with smooth scrolling navigation",
@@ -391,8 +391,10 @@
     },
     {
       "id": "AR-18",
-      "summary": "Add Google site verification meta tag with content '3JcpygsB7VEyNJC7...' to the <head> section",
-      "reqIds": [],
+      "summary": "Replace the existing Google site verification meta tag content in frontend/index.html from the current value to '3JcpygsB7VEyNJC7'",
+      "reqIds": [
+        "REQ-36"
+      ],
       "status": "pending"
     }
   ],

@@ -1,9 +1,9 @@
 # Specification
 
 ## Summary
-**Goal:** Update the Google site verification meta tag with the correct verification code.
+**Goal:** Update the Google site verification meta tag content to the new verification code.
 
 **Planned changes:**
-- Change the content attribute of the Google site verification meta tag in frontend/index.html from "PASTE-YOUR-NEW-CODE-HERE" to "3JcpygsB7VEyNJC7"
+- Replace the content attribute value of the google-site-verification meta tag in frontend/index.html to '3JcpygsB7VEyNJC7'
 
-**User-visible outcome:** The website will be properly verified with Google Search Console using the correct verification code.
+**User-visible outcome:** The website will be verified with Google using the updated verification code, enabling Google Search Console features and site ownership confirmation.

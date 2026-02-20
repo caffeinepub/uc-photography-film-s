@@ -1,22 +1,22 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Update Google site verification meta tag content to exact value",
+  "title": "Update Google site verification meta tag content to 3JcpygsB7VEyNJC7",
   "requirements": [
     {
-      "id": "REQ-35",
-      "summary": "Update Google site verification meta tag content attribute from placeholder to exact value '3JcpygsB7VEyNJC7'",
+      "id": "REQ-36",
+      "summary": "Replace the existing Google site verification meta tag content in frontend/index.html from the current value to '3JcpygsB7VEyNJC7'",
       "acceptanceCriteria": [
-        "The meta tag in frontend/index.html must have the exact content attribute value '3JcpygsB7VEyNJC7'",
-        "The meta tag must remain in the <head> section",
-        "The meta tag name attribute must remain 'google-site-verification'",
-        "No other HTML structure in index.html should be modified"
+        "The meta tag in frontend/index.html has name='google-site-verification'",
+        "The content attribute value is exactly '3JcpygsB7VEyNJC7'",
+        "The meta tag remains in the <head> section",
+        "No other meta tags are modified"
       ],
       "file_operations": [
         {
           "path": "frontend/index.html",
           "operation": "modify",
-          "description": "Replace the Google site verification meta tag content attribute value from 'PASTE-YOUR-NEW-CODE-HERE' to '3JcpygsB7VEyNJC7' while preserving all other attributes and HTML structure"
+          "description": "Update the content attribute of the google-site-verification meta tag to '3JcpygsB7VEyNJC7'. Locate the meta tag with name='google-site-verification' in the <head> section and change only its content attribute value while preserving all other meta tags and HTML structure unchanged."
         }
       ]
     }

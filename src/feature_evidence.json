@@ -1,23 +1,4 @@
 {
   "kind": "feature_evidence_report",
-  "features": [
-    {
-      "featureId": "feature-replace-the-existing-google-site-verification-meta-tag-content-in-frontend-index-html-from-content-paste-your-new-code-here-to-content-3jcpygsb7veynjc7",
-      "featureTitle": "Replace the existing Google site verification meta tag content in frontend/index.html from 'content=\"PASTE-YOUR-NEW-CODE-HERE\"' to 'content=\"3JcpygsB7VEyNJC7\"'",
-      "files": [
-        "frontend/index.html"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-35"
-      ],
-      "confidence": "high"
-    }
-  ]
+  "features": []
 }
