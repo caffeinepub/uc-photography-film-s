@@ -1,7 +1,7 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-20T15:23:23.061Z",
+  "generatedAt": "2026-02-21T13:18:33.044Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
@@ -11,11 +11,12 @@
     "implemented": 0,
     "items": [
       {
-        "id": "REQ-36",
-        "summary": "Replace the existing Google site verification meta tag content in frontend/index.html from the current value to '3JcpygsB7VEyNJC7'",
+        "id": "REQ-1",
+        "summary": "Deploy the current application version to the production environment on the Internet Computer network",
         "status": "missing",
         "plannedFiles": [
-          "frontend/index.html"
+          "frontend/index.html",
+          "frontend/src/main.tsx"
         ],
         "matchedFiles": []
       }

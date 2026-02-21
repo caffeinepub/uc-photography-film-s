@@ -1,38 +1,29 @@
 {
   "kind": "build_request",
-  "title": "Update Google site verification meta tag content to 3JcpygsB7VEyNJC7",
-  "projectName": "UC Photography",
-  "priority": "normal",
+  "title": "Deploy application to production",
+  "priority": "high",
   "requirements": [
     {
-      "id": "REQ-36",
-      "text": "Replace the existing Google site verification meta tag content in frontend/index.html from the current value to '3JcpygsB7VEyNJC7'",
-      "target": "frontend",
+      "id": "REQ-1",
+      "text": "Deploy the current application version to the production environment on the Internet Computer network",
+      "target": "both",
       "source": {
         "messageIds": [
-          "msg-10"
+          "msg-final"
         ],
         "quotes": [
-          "Update Google verification meta tag with this code:\n\n3JcpygsB7VEyNJC7"
+          "Publish kro"
         ]
       },
       "acceptanceCriteria": [
-        "The meta tag in frontend/index.html has name='google-site-verification'",
-        "The content attribute value is exactly '3JcpygsB7VEyNJC7'",
-        "The meta tag remains in the <head> section",
-        "No other meta tags are modified"
+        "Application is successfully deployed to production canister",
+        "Production URL is accessible and serves the live application",
+        "All backend and frontend components are functional in production"
       ]
     }
   ],
-  "constraints": [
-    "Only modify the content attribute value of the google-site-verification meta tag",
-    "Do not change any other meta tags or HTML structure"
-  ],
-  "nonGoals": [
-    "Adding new meta tags",
-    "Modifying SEO or Open Graph tags",
-    "Changing HTML structure or layout"
-  ],
+  "constraints": [],
+  "nonGoals": [],
   "imageRequirements": {
     "required": [],
     "edits": []

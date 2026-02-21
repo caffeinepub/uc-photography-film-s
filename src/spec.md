@@ -1,9 +1,12 @@
 # Specification
 
 ## Summary
-**Goal:** Update the Google site verification meta tag content to the new verification code.
+**Goal:** Deploy the UC Photo application to production on the Internet Computer network.
 
 **Planned changes:**
-- Replace the content attribute value of the google-site-verification meta tag in frontend/index.html to '3JcpygsB7VEyNJC7'
+- Deploy backend canister to Internet Computer production environment
+- Deploy frontend canister to Internet Computer production environment
+- Configure production URLs and routing
+- Verify all services are functional in production
 
-**User-visible outcome:** The website will be verified with Google using the updated verification code, enabling Google Search Console features and site ownership confirmation.
+**User-visible outcome:** The UC Photo application will be live and accessible on the Internet Computer with a public production URL, allowing users to view the photography portfolio and services online.
